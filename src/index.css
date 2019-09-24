@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #333;
+    color: #CCC;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox']+span:before {
+    border: 1px solid black;
+    content: ' ';
+    display: inline-block;
+    height: 1rem;
+    line-height: 1rem;
+    margin-right: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 1rem;
+}
+
+input[type='checkbox']:disabled+span:before {
+    border-color: #666;
+}
+
+input[type='checkbox']:checked+span:before {
+    content: '\2713';
+}
+
+select {
+    background-color: #222;
+    border: 1px solid black;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+option {
+    background-color: #222;
+    color: inherit;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.gift.love {
+    color: #F08;
+}
+
+.gift.like {
+    color: #08F;
+}
+
+#npc-list {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto) 1fr auto;
+    height: 100%;
+}
+
+#npc-list>label {
+    justify-self: right;
+}
+
+#npc-list>ul, #npc-list>.btns {
+    grid-column: 1 / 3;
+}
+
+#npc-list>ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+    grid-auto-rows: 15rem;
+    overflow-y: auto;
+}
+
+#npc-list>.btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+.npc-card {
+    display: grid;
+    grid-column-gap: 4px;
+    grid-template-areas: 'name name' 'filler filler' 'gift1 gift1' 'gift2 gift2' 'gift3 gift3' 'state edit';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr repeat(4, auto);
+    overflow: hidden;
+}
+
+.npc-card>.name, .npc-card>.gift {
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+.npc-card>.name {
+    font-size: 1.5rem;
+    grid-area: name;
+    line-height: 2rem;
+}
+
+.npc-card>.gift, .npc-card>.btn {
+    display: none;
+}
+
+.npc-card:focus>.gift, .npc-card:focus>.btn, .npc-card:hover>.gift, .npc-card:hover>.btn {
+    display: block;
+}
+
+.npc-card>.gift:nth-child(2) {
+    grid-area: gift1;
+}
+
+.npc-card>.gift:nth-child(3) {
+    grid-area: gift2;
+}
+
+.npc-card>.gift:nth-child(4) {
+    grid-area: gift3;
+}
+
+.npc-card>.state {
+    grid-area: state;
+}
+
+.npc-card>.edit {
+    grid-area: edit;
+}
+
+#npc-editor {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto) 1fr auto;
+    height: 100%;
+}
+
+#npc-editor>label {
+    justify-self: right;
+}
+
+#npc-editor>ul {
+    list-style: none;
+    overflow-y: auto;
+}
+
+#npc-editor>.btn {
+    grid-column: 1 / 3;
+}

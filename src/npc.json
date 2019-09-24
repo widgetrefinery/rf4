@@ -1,0 +1,473 @@
+[
+    {
+        "type": "bachelor",
+        "name": "Arthur",
+        "love": [
+            "salmon onigiri",
+            "turnip heaven",
+            "golden turnip",
+            "golden tyrant turnip"
+        ],
+        "like": [
+            "pink turnip",
+            "collosal pink",
+            "turnip",
+            "onigiri",
+            "pickled turnip",
+            "pickles",
+            "sandwich",
+            "pickle mix",
+            "brand glasses",
+            "spectacles",
+            "intelligent glasses",
+            "tyrant turnip",
+            "curry manju",
+            "chinese manju",
+            "rare can",
+            "can"
+        ]
+    },
+    {
+        "type": "bachelor",
+        "name": "Doug",
+        "love": [
+            "tempura bowl"
+        ],
+        "like": [
+            "rice",
+            "onigiri",
+            "baked onigiri",
+            "salmon onigiri",
+            "bamboo rice",
+            "egg bowl",
+            "omelet rice",
+            "rice porridge",
+            "milk porridge",
+            "risotto"
+        ]
+    },
+    {
+        "type": "bachelor",
+        "name": "Dylas",
+        "love": [
+            "lover sashimi",
+            "tuna sashimi",
+            "sunsquid sashimi",
+            "glitter sashimi"
+        ],
+        "like": [
+            "pike sashimi",
+            "trout sashimi",
+            "cherry sashimi",
+            "needlefish sashimi",
+            "squid sashimi",
+            "girella sashimi",
+            "sardine sashimi",
+            "salmon sashimi",
+            "shrimp sashimi",
+            "char sashimi",
+            "turbot sashimi",
+            "rainbow sashimi",
+            "flounder sashimi",
+            "skipjack sashimi",
+            "lobster sashimi",
+            "snapper sashimi",
+            "lamp squid sashimi",
+            "fall sashimi",
+            "yellowtail sashimi",
+            "blowfish sashimi",
+            "taimen sashimi"
+        ]
+    },
+    {
+        "type": "bachelor",
+        "name": "Kiel",
+        "love": [
+            "boss items",
+            "chocolate cake",
+            "stew"
+        ],
+        "like": [
+            "sweets (except chocolate cake)"
+        ]
+    },
+    {
+        "type": "bachelor",
+        "name": "Leon",
+        "love": [
+            "grilled lamp squid",
+            "salted r. trout"
+        ],
+        "like": [
+            "rainbow trout",
+            "grilled snapper",
+            "grilled gibelio",
+            "charm blue",
+            "rainbow sashimi",
+            "lamp squid sashimi",
+            "grilled s. flounder",
+            "grilled shrimp",
+            "salted char",
+            "salted chub",
+            "grilled snapper",
+            "grilled l. snapper",
+            "grilled skipjack",
+            "grilled mackerel",
+            "salted pike",
+            "grilled turbot",
+            "grilled f. flounder",
+            "grilled squid",
+            "blue lamp grass",
+            "lamp squid",
+            "poison trout",
+            "poison trout sashimi",
+            "pom-pom grass"
+        ]
+    },
+    {
+        "type": "bachelor",
+        "name": "Vishnal",
+        "love": [
+            "curry rice",
+            "gold vegetables",
+            "ultimate curry",
+            "royal curry",
+            "curry manju",
+            "curry udon",
+            "dry curry"
+        ],
+        "like": [
+            "fried rice",
+            "pot stickers",
+            "meat dumplings",
+            "raw vegetables (except turnips)",
+            "omelet rice",
+            "croquette",
+            "flan",
+            "ice cream",
+            "gyoza",
+            "steamed gyoza",
+            "chinese manju"
+        ]
+    },
+    {
+        "type": "bachelorette",
+        "name": "Amber",
+        "love": [
+            "mixed smoothie",
+            "emery flower"
+        ],
+        "like": [
+            "apple",
+            "orange",
+            "strawberry",
+            "pineapple juice",
+            "tomato juice",
+            "grape juice",
+            "orange juice",
+            "apple juice",
+            "fruit juice",
+            "vegetable juice",
+            "mixed juice",
+            "hot juice",
+            "honey",
+            "moondrop flower",
+            "charm blue"
+        ]
+    },
+    {
+        "type": "bachelorette",
+        "name": "Clorica",
+        "love": [
+            "apple pie",
+            "platinum",
+            "orichalcum",
+            "diamond",
+            "round stone",
+            "shade stone",
+            "white stone",
+            "glitter stone",
+            "red core",
+            "yellow core",
+            "blue core",
+            "green core"
+        ],
+        "like": [
+            "apple",
+            "apple dishes",
+            "silver",
+            "gold",
+            "jewelry",
+            "hot chocolate",
+            "cakes and cookies"
+        ]
+    },
+    {
+        "type": "bachelorette",
+        "name": "Dolce",
+        "love": [
+            "pumpkin flan",
+            "cake",
+            "apple pie",
+            "chocolate cake",
+            "flan",
+            "cheesecake"
+        ],
+        "like": [
+            "medicine",
+            "hot chocolate",
+            "hot juice",
+            "relax tea",
+            "hot milk",
+            "sewing material",
+            "moondrop grass",
+            "ice cream",
+            "cookies and other deserts"
+        ]
+    },
+    {
+        "type": "bachelorette",
+        "name": "Forte",
+        "love": [
+            "chocolate cake",
+            "omelet rice",
+            "union stew"
+        ],
+        "like": [
+            "eggs",
+            "egg dishes",
+            "pot dishes",
+            "western sweets",
+            "flowers"
+        ]
+    },
+    {
+        "type": "bachelorette",
+        "name": "Margaret",
+        "love": [
+            "golden juice",
+            "pink melon",
+            "gold vegetables",
+            "pineapple juice",
+            "prelude to love"
+        ],
+        "like": [
+            "raw vegetables",
+            "shrimp",
+            "lobster",
+            "anything fruit related",
+            "flowers",
+            "mushrooms",
+            "apple pie",
+            "cakes and cookies",
+            "choco cookie",
+            "ice cream",
+            "strawberry milk",
+            "flan",
+            "strawberry jam",
+            "grape jam"
+        ]
+    },
+    {
+        "type": "bachelorette",
+        "name": "Xiao Pai",
+        "love": [
+            "big white crystal",
+            "emery flower"
+        ],
+        "like": [
+            "toyherb",
+            "chinese manju",
+            "gyoza",
+            "fried rice",
+            "boiled gyoza"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Bado",
+        "love": [
+            "tempura bowl",
+            "egg bowl"
+        ],
+        "like": [
+            "scrap metal",
+            "onigiri",
+            "salmon onigiri"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Blossom",
+        "love": [
+            "risotto",
+            "dried sardines"
+        ],
+        "like": [
+            "milk porridge",
+            "relax tea",
+            "vegetables",
+            "vegetable juice"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Illuminata",
+        "love": [
+            "relax tea leaves",
+            "relax tea"
+        ],
+        "like": [
+            "toast",
+            "bread",
+            "yam of the ages",
+            "cookies and other deserts",
+            "choco cookie",
+            "cake",
+            "chocolate cake",
+            "cheesecake",
+            "apple pie",
+            "ice cream",
+            "cheese bread",
+            "donut",
+            "strawberry jam",
+            "marmalade",
+            "pound cake",
+            "chocoloate sponge",
+            "toyherb",
+            "autumn grass",
+            "dumplings"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Jones",
+        "love": [
+            "fried rice"
+        ],
+        "like": [
+            "moondrop flower",
+            "ultra moondrop flower",
+            "trout sashimi",
+            "miso eggplant",
+            "tempura",
+            "salted masu trout",
+            "grilled s. flounder",
+            "udon",
+            "tempura udon",
+            "grilled miso",
+            "flan"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Lin Fa",
+        "love": [
+            "milk porridge"
+        ],
+        "like": [
+            "rice porridge",
+            "tempura bowl",
+            "egg bowl",
+            "onigiri",
+            "baked onigiri",
+            "salmon onigiri",
+            "milk (m)",
+            "meat dumplings",
+            "chinese manju",
+            "bamboo rice",
+            "rice",
+            "hot milk",
+            "gyoza"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Nancy",
+        "love": [
+            "stew"
+        ],
+        "like": [
+            "moondrop flower",
+            "omelet",
+            "omelet rice",
+            "risotto",
+            "cheese fondue",
+            "doria",
+            "seafood doria",
+            "gratin",
+            "seafood gratin",
+            "cheesecake",
+            "flan",
+            "pumpkin flan",
+            "cheese bread"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Procoline",
+        "love": [
+            "cabbage",
+            "pumpkin",
+            "bamboo shoot",
+            "mushrooms"
+        ],
+        "like": [
+            "baked apple"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Ventuswill",
+        "love": [
+            "gold vegetables",
+            "pancakes"
+        ],
+        "like": [
+            "honey",
+            "mushrooms",
+            "vegetables"
+        ]
+    },
+    {
+        "type": "resident",
+        "name": "Volkanon",
+        "love": [
+            "relax tea"
+        ],
+        "like": [
+            "honey",
+            "sweet potato",
+            "lumber",
+            "stone",
+            "sweets"
+        ]
+    },
+    {
+        "type": "visitor",
+        "name": "Barrett",
+        "love": [
+            "salmon",
+            "salted salmon",
+            "salmon sashimi",
+            "skipjack sashimi"
+        ],
+        "like": [
+            "iron"
+        ]
+    },
+    {
+        "type": "visitor",
+        "name": "Raven",
+        "love": [
+            "pendants",
+            "big/rune crystals"
+        ],
+        "like": [
+            "elemental crystals",
+            "flowers",
+            "metals",
+            "jewels"
+        ]
+    }
+]
