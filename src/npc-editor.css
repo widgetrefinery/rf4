@@ -1,0 +1,20 @@
+#npc-editor {
+    display: grid;
+    grid-gap: 0.25rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto) 1fr auto;
+    height: 100%;
+}
+
+#npc-editor>label {
+    justify-self: right;
+}
+
+#npc-editor>ul {
+    list-style: none;
+    overflow-y: auto;
+}
+
+#npc-editor>.btn {
+    grid-column: 1 / 3;
+}

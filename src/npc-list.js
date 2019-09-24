@@ -1,3 +1,4 @@
+import './npc-list.css';
 import m from 'mithril';
 import Npc from './npc';
 
@@ -15,7 +16,7 @@ class NpcCard {
     }
 
     view() {
-        return m('li', { class: 'npc-card', tabstop: 0 }, [
+        return m('li', { class: 'npc-card', tabindex: 0 }, [
             m('div', { class: 'name' }, this._npc.name),
             this._npc.gifts.filter(x => x.state === Npc.giftStates.SHOW)
                 .map(x => m('div', { class: 'gift ' + x.response }, x.name)),

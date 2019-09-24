@@ -1,5 +1,6 @@
+import './npc-editor.css';
 import m from 'mithril';
-import npc from './npc';
+import Npc from './npc';
 
 class GiftField {
     constructor(vnode) {
@@ -10,31 +11,40 @@ class GiftField {
     _disabled() {
         let count = 0;
         for (let gift of this._gifts) {
-            if (npc.giftStates.SHOW === gift.state) {
+            if (Npc.giftStates.SHOW === gift.state) {
                 count++;
             }
         }
-        return 3 <= count && npc.giftStates.SHOW !== this._gift.state;
+        return 3 <= count && Npc.giftStates.SHOW !== this._gift.state;
     }
 
     _toggle(e) {
         let value = e.srcElement.checked;
         if (value) {
             if (!this._disabled()) {
-                this._gift.state = npc.giftStates.SHOW;
+                this._gift.state = Npc.giftStates.SHOW;
             }
         } else {
-            this._gift.state = npc.giftStates.HIDE;
+            this._gift.state = Npc.giftStates.HIDE;
         }
     }
 
     view() {
+        let cls = 'checkbox';
+        let checked = Npc.giftStates.SHOW === this._gift.state;
+        let disabled = this._disabled();
+        if (checked) {
+            cls += ' checked';
+        }
+        if (disabled) {
+            cls += ' disabled';
+        }
         return m('li', { class: 'gift ' + this._gift.response }, [
-            m('label', { tabindex: 0 }, [
+            m('label', { class: cls, tabindex: 0 }, [
                 m('input', {
                     type: 'checkbox',
-                    disabled: this._disabled(),
-                    checked: npc.giftStates.SHOW === this._gift.state,
+                    disabled: disabled,
+                    checked: checked,
                     onchange: e => this._toggle(e)
                 }),
                 m('span', this._gift.name)
@@ -45,7 +55,7 @@ class GiftField {
 
 class NpcEditor {
     constructor(vnode) {
-        this._npc = npc.get(vnode.attrs.key);
+        this._npc = Npc.get(vnode.attrs.key);
     }
 
     _setState(e) {
@@ -62,7 +72,7 @@ class NpcEditor {
             m('select', {
                 value: this._npc.state,
                 onchange: e => this._setState(e)
-            }, Object.values(npc.states).map(x => m('option', { key: x, value: x }, x))),
+            }, Object.values(Npc.states).map(x => m('option', { key: x, value: x }, x))),
             m('label', 'Gifts:'),
             m('ul', this._npc.gifts.map(x => m(GiftField, {
                 key: x.name,
