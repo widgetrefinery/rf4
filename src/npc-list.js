@@ -16,18 +16,27 @@ class NpcCard {
     }
 
     view() {
+        let checked = Npc.states.GIFTED === this._npc.state;
+        let disabled = Npc.states.HIDE === this._npc.state;
         return m('li', { class: 'npc-card', tabindex: 0 }, [
-            m('div', { class: 'name' }, this._npc.name),
+            m('div', { class: 'name' }, [
+                m('label', {
+                    class: 'checkbox' + (checked ? ' checked' : '') + (disabled ? ' disabled' : ''),
+                    tabindex: 0
+                }, m('input', {
+                    type: 'checkbox',
+                    checked: checked,
+                    disabled: disabled,
+                    onchange: () => this._toggleGift()
+                })),
+                m('span', this._npc.name),
+                m('a', {
+                    class: 'edit',
+                    href: '#/npc/' + this._npc.name
+                }, '✎')
+            ]),
             this._npc.gifts.filter(x => x.state === Npc.giftStates.SHOW)
-                .map(x => m('div', { class: 'gift ' + x.response }, x.name)),
-            m('button', {
-                class: 'btn state',
-                onclick: () => this._toggleGift()
-            }, this._npc.state === Npc.states.GIFTED ? 'Ungift' : 'Gift'),
-            m('a', {
-                class: 'btn edit',
-                href: '#/npc/' + this._npc.name
-            }, 'Edit')
+                .map(x => m('div', { class: 'gift ' + x.response }, x.name))
         ]);
     }
 }

@@ -21,23 +21,16 @@ input[type='checkbox'] {
 }
 
 .checkbox:before {
-    border: 1px solid black;
-    content: ' ';
-    display: inline-block;
-    height: 1rem;
-    line-height: 1rem;
-    margin-right: 0.25rem;
-    text-align: center;
-    vertical-align: middle;
-    width: 1rem;
+    content: '\2610 ';
+    display: inline;
 }
 
 .checkbox.checked:before {
-    content: '\2713';
+    content: '\2611 ';
 }
 
 .checkbox.disabled:before {
-    border-color: #666;
+    color: #666;
 }
 
 select {

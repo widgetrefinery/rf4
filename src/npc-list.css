@@ -16,8 +16,9 @@
 
 #npc-list>ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
-    grid-auto-rows: 15rem;
+    grid-gap: 0.25rem;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
     overflow-y: auto;
 }
 
@@ -28,51 +29,29 @@
 
 .npc-card {
     display: grid;
-    grid-column-gap: 0.25rem;
-    grid-template-areas: 'name name' 'gap gap' 'gift1 gift1' 'gift2 gift2' 'gift3 gift3' 'state edit';
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 1fr repeat(4, auto);
-}
-
-.npc-card>.name, .npc-card>.gift, .npc-card>.btn {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.npc-card>.name, .npc-card>.gift {
-    margin-bottom: 0.25rem;
-    padding: 0.25rem;
+    grid-gap: 0.25rem;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
 }
 
 .npc-card>.name {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
     font-size: 1.5rem;
-    grid-area: name;
+    grid-template-columns: auto 1fr auto;
     line-height: 2rem;
+}
+
+.npc-card>.name>.edit {
+    color: inherit;
+    text-decoration: none;
 }
 
 .npc-card>.gift, .npc-card>.btn {
     display: none;
 }
 
-.npc-card:focus>.gift, .npc-card:focus>.btn, .npc-card:hover>.gift, .npc-card:hover>.btn {
+.npc-card:focus>.gift, .npc-card:focus>.btn, .npc-card:focus-within>.gift, .npc-card:focus-within>.btn {
+    background-color: rgba(0, 0, 0, 0.4);
     display: block;
-}
-
-.npc-card>.gift:nth-child(2) {
-    grid-area: gift1;
-}
-
-.npc-card>.gift:nth-child(3) {
-    grid-area: gift2;
-}
-
-.npc-card>.gift:nth-child(4) {
-    grid-area: gift3;
-}
-
-.npc-card>.state {
-    grid-area: state;
-}
-
-.npc-card>.edit {
-    grid-area: edit;
 }
