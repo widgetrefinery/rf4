@@ -1,0 +1,12 @@
+.checkbox:before {
+    content: '\2610 ';
+    padding-right: 0.25rem;
+}
+
+.checkbox.checked:before {
+    content: '\2611 ';
+}
+
+.checkbox.disabled:before {
+    color: #666;
+}

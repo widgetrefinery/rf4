@@ -27,31 +27,32 @@
     grid-template-columns: repeat(auto-fit, 1fr);
 }
 
-.npc-card {
-    display: grid;
-    grid-gap: 0.25rem;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-}
-
-.npc-card>.name {
+.npc-entry>.name {
     background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
     display: grid;
     font-size: 1.5rem;
     grid-template-columns: auto 1fr auto;
     line-height: 2rem;
 }
 
-.npc-card>.name>.edit {
+.npc-entry>.name>.edit {
     color: inherit;
     text-decoration: none;
 }
 
-.npc-card>.gift, .npc-card>.btn {
+.npc-entry>.gifts {
     display: none;
+    grid-gap: 0.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    padding-left: 1.5rem;
+    padding-top: 0.25rem;
 }
 
-.npc-card:focus>.gift, .npc-card:focus>.btn, .npc-card:focus-within>.gift, .npc-card:focus-within>.btn {
-    background-color: rgba(0, 0, 0, 0.4);
-    display: block;
+.npc-entry:focus>.gifts, .npc-entry:focus-within>.gifts {
+    display: grid;
+}
+
+.npc-entry>.gifts>.gift {
+    background-color: rgba(0, 0, 0, 0.3);
 }

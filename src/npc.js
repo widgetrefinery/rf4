@@ -1,16 +1,5 @@
 import data from './npc.json';
 
-const GiftState = {
-    HIDE: 'hide',
-    SHOW: 'show',
-};
-
-const NpcState = {
-    GIFTED: 'gifted',
-    HIDE: 'hide',
-    NEED_GIFT: 'need-gift',
-};
-
 function compareName(a, b) {
     if (a.name < b.name) {
         return -1;
@@ -26,7 +15,7 @@ function load(npc) {
     let giftList = [];
     for (let response of ['love', 'like']) {
         for (let name of npc[response]) {
-            let gift = { name: name, response: response, state: GiftState.HIDE };
+            let gift = { name: name, response: response, show: false };
             giftIndex[name] = gift;
             giftList.push(gift);
         }
@@ -34,7 +23,8 @@ function load(npc) {
     giftList.sort(compareName);
     giftList.get = x => giftIndex[x];
 
-    npc.state = NpcState.NEED_GIFT;
+    npc.show = true;
+    npc.gifted = false;
     npc.gifts = giftList;
     return npc;
 }
@@ -68,10 +58,8 @@ function loadAll() {
     giftList.sort();
 
     npcList.get = x => npcIndex[x];
-    npcList.states = NpcState;
     npcList.types = typeList;
     npcList.gifts = giftList;
-    npcList.giftStates = GiftState;
     return npcList;
 }
 

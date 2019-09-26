@@ -16,23 +16,6 @@ body {
     line-height: 1.5rem;
 }
 
-input[type='checkbox'] {
-    display: none;
-}
-
-.checkbox:before {
-    content: '\2610 ';
-    display: inline;
-}
-
-.checkbox.checked:before {
-    content: '\2611 ';
-}
-
-.checkbox.disabled:before {
-    color: #666;
-}
-
 select {
     background-color: #222;
     border: 1px solid black;

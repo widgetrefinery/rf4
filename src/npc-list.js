@@ -1,42 +1,23 @@
 import './npc-list.css';
 import m from 'mithril';
+import Checkbox from './checkbox';
 import Npc from './npc';
 
-class NpcCard {
-    constructor(vnode) {
-        this._npc = vnode.attrs.npc;
-    }
-
-    _toggleGift() {
-        if (this._npc.state === Npc.states.GIFTED) {
-            this._npc.state = Npc.states.NEED_GIFT;
-        } else {
-            this._npc.state = Npc.states.GIFTED;
-        }
-    }
-
-    view() {
-        let checked = Npc.states.GIFTED === this._npc.state;
-        let disabled = Npc.states.HIDE === this._npc.state;
-        return m('li', { class: 'npc-card', tabindex: 0 }, [
+const NpcEntry = {
+    view(vnode) {
+        let npc = vnode.attrs.npc;
+        return m('li', { class: 'npc-entry', tabindex: 0 }, [
             m('div', { class: 'name' }, [
-                m('label', {
-                    class: 'checkbox' + (checked ? ' checked' : '') + (disabled ? ' disabled' : ''),
-                    tabindex: 0
-                }, m('input', {
-                    type: 'checkbox',
-                    checked: checked,
-                    disabled: disabled,
-                    onchange: () => this._toggleGift()
-                })),
-                m('span', this._npc.name),
-                m('a', {
-                    class: 'edit',
-                    href: '#/npc/' + this._npc.name
-                }, '✎')
+                m(Checkbox, {
+                    checked: npc.gifted,
+                    disabled: !npc.show,
+                    onchange: v => npc.gifted = v
+                }),
+                m('span', npc.name),
+                m('a', { class: 'edit', href: '#/npc/' + npc.name }, '✎'),
             ]),
-            this._npc.gifts.filter(x => x.state === Npc.giftStates.SHOW)
-                .map(x => m('div', { class: 'gift ' + x.response }, x.name))
+            m('div', { class: 'gifts' }, npc.gifts.filter(x => x.show)
+                .map(x => m('div', { class: 'gift ' + x.response }, x.name)))
         ]);
     }
 }
@@ -47,39 +28,26 @@ class NpcList {
         this._type = this._types[0];
         this._gifts = [''].concat(Npc.gifts);
         this._gift = this._gifts[0];
-        this._states = ['all', 'visible', Npc.states.NEED_GIFT, Npc.states.GIFTED];
+        this._states = ['all', 'visible', 'gifted', 'need-gift'];
         this._state = this._states[0];
     }
 
-    _setType(e) {
-        this._type = e.srcElement.value;
-    }
-
-    _setGift(e) {
-        this._gift = e.srcElement.value;
-    }
-
-    _setState(e) {
-        this._state = e.srcElement.value;
-    }
-
-    _ungiftAll() {
-        Npc.filter(x => x.state === Npc.states.GIFTED)
-            .forEach(x => x.state = Npc.states.NEED_GIFT);
-    }
-
     _include(npc) {
-        if (this._state === 'visible' && npc.state === Npc.states.HIDE) {
+        if ('all' !== this._state && !npc.show) {
             return false;
         }
-        if (this._state === Npc.states.NEED_GIFT && npc.state !== this._state) {
+        if ('gifted' === this._state && !npc.gifted) {
             return false;
         }
-        if (this._state === Npc.states.GIFTED && npc.state !== this._state) {
+        if ('need-gift' === this._state && npc.gifted) {
             return false;
         }
         return ('' === this._type || npc.type === this._type)
             && ('' === this._gift || npc.gifts.get(this._gift));
+    }
+
+    _ungiftAll() {
+        Npc.forEach(x => x.gifted = false);
     }
 
     view() {
@@ -87,20 +55,20 @@ class NpcList {
             m('label', 'Type:'),
             m('select', {
                 value: this._type,
-                onchange: e => this._setType(e)
+                onchange: e => this._type = e.srcElement.value
             }, this._types.map(x => m('option', { key: x, value: x }, x))),
             m('label', 'Gift:'),
             m('select', {
                 value: this._gift,
-                onchange: e => this._setGift(e)
+                onchange: e => this._gift = e.srcElement.value
             }, this._gifts.map(x => m('option', { key: x, value: x }, x))),
-            m('label', 'State:'),
+            m('label', 'Show:'),
             m('select', {
                 value: this._state,
-                onchange: e => this._setState(e)
+                onchange: e => this._state = e.srcElement.value
             }, this._states.map(x => m('option', { key: x, value: x }, x))),
             m('ul', Npc.filter(x => this._include(x))
-                .map(x => m(NpcCard, { key: x.name, npc: x }))),
+                .map(x => m(NpcEntry, { key: x.name, npc: x }))),
             m('div', { class: 'btns' }, [
                 m('button', { class: 'btn', onclick: () => this._ungiftAll() }, 'Ungift All')
             ])
