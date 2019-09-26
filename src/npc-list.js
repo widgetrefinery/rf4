@@ -3,21 +3,31 @@ import m from 'mithril';
 import Checkbox from './checkbox';
 import Npc from './npc';
 
-const NpcEntry = {
+class NpcEntry {
+    constructor(vnode) {
+        this._npc = vnode.attrs.npc;
+        this._open = false;
+    }
+
     view(vnode) {
-        let npc = vnode.attrs.npc;
-        return m('li', { class: 'npc-entry', tabindex: 0 }, [
+        let npc = this._npc;
+        return m('li', { class: 'npc-entry' + (this._open ? ' open' : '') }, [
             m('div', { class: 'name' }, [
                 m(Checkbox, {
                     checked: npc.gifted,
                     disabled: !npc.show,
                     onchange: v => npc.gifted = v
                 }),
-                m('span', npc.name),
-                m('a', { class: 'edit', href: '#/npc/' + npc.name }, '✎'),
+                m('span', {
+                    onclick: () => this._open = !this._open
+                }, npc.name),
+                m('a', {
+                    class: 'edit',
+                    href: '#/npc/' + npc.name
+                }, '✎'),
             ]),
-            m('div', { class: 'gifts' }, npc.gifts.filter(x => x.show)
-                .map(x => m('div', { class: 'gift ' + x.response }, x.name)))
+            npc.gifts.filter(x => x.show)
+                .map(x => m('div', { class: 'gift ' + x.response }, x.name))
         ]);
     }
 }

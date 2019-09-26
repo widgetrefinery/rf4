@@ -22,6 +22,7 @@ function load(npc) {
     }
     giftList.sort(compareName);
     giftList.get = x => giftIndex[x];
+    giftList[0].show = true;
 
     npc.show = true;
     npc.gifted = false;
