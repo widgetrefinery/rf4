@@ -1,10 +1,10 @@
 .checkbox:before {
-    content: '\2610 ';
+    content: '\2610';
     padding-right: 0.25rem;
 }
 
 .checkbox.checked:before {
-    content: '\2611 ';
+    content: '\2611';
 }
 
 .checkbox.disabled {
