@@ -24,6 +24,15 @@ function saveState() {
     window.localStorage.setItem('npcs', JSON.stringify(state));
 }
 
+function setBoolean(obj, key, value) {
+    if (value) {
+        obj[key] = true;
+    } else {
+        delete obj[key];
+    }
+    saveState();
+}
+
 function loadNpcs() {
     let npcsState = state;
     let index = {};
@@ -43,12 +52,12 @@ function loadNpcs() {
 
 function loadNpc(npc, npcState) {
     Object.defineProperty(npc, 'show', {
-        get: function () { return npcState.show; },
-        set: function (value) { npcState.show = value; saveState(); }
+        get: () => npcState.show,
+        set: v => setBoolean(npcState, 'show', v)
     });
     Object.defineProperty(npc, 'gifted', {
-        get: function () { return npcState.gifted; },
-        set: function (value) { npcState.gifted = value; saveState(); }
+        get: () => npcState.gifted,
+        set: v => setBoolean(npcState, 'gifted', v)
     });
     npc.gifts = loadGifts(npc, npcState);
     return npc;
@@ -77,7 +86,7 @@ function loadGift(name, response, giftsState) {
         name: name,
         response: response,
         get show() { return giftsState[name]; },
-        set show(value) { giftsState[name] = value; saveState(); }
+        set show(value) { setBoolean(giftsState, name, value); }
     };
     return gift;
 }
