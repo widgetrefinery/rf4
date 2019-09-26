@@ -7,10 +7,15 @@ const checkbox = {
         let disabled = vnode.attrs.disabled;
         let label = vnode.attrs.label;
         let onchange = vnode.attrs.onchange;
+        let onclick = () => {
+            if (!disabled && onchange) {
+                onchange(!checked);
+            }
+        };
         return m('span', {
             class: 'checkbox' + (checked ? ' checked' : '') + (disabled ? ' disabled' : ''),
             tabindex: 0,
-            onclick: () => onchange(!checked)
+            onclick: onclick
         }, label);
     }
 }

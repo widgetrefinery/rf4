@@ -42,6 +42,10 @@
     line-height: 2rem;
 }
 
+.npc-entry>.name.disabled {
+    color: #666;
+}
+
 .npc-entry>.name>.edit {
     color: inherit;
     display: none;

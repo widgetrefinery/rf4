@@ -9,10 +9,10 @@ class NpcEntry {
         this._open = false;
     }
 
-    view(vnode) {
+    view() {
         let npc = this._npc;
         return m('li', { class: 'npc-entry' + (this._open ? ' open' : '') }, [
-            m('div', { class: 'name' }, [
+            m('div', { class: 'name' + (npc.show ? '' : ' disabled') }, [
                 m(Checkbox, {
                     checked: npc.gifted,
                     disabled: !npc.show,
