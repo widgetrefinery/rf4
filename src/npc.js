@@ -37,18 +37,24 @@ function setBoolean(obj, key, value) {
 function loadNpcs() {
     const npcsState = state;
     const npcs = uniqueArray(v => v.name);
-    for (let npc of rawNpcs) {
-        if (!npcsState[npc.name]) {
-            npcsState[npc.name] = {};
+    for (const type in rawNpcs) {
+        if (!rawNpcs.hasOwnProperty(type)) {
+            continue;
         }
-        npc = loadNpc(npc, npcsState[npc.name]);
-        npcs.add(npc);
+        const list = rawNpcs[type];
+        for (let npc of list) {
+            if (!npcsState[npc.name]) {
+                npcsState[npc.name] = {};
+            }
+            npc = loadNpc(npc, type, npcsState[npc.name]);
+            npcs.add(npc);
+        }
     }
     npcs.sort(compareName);
     return npcs;
 }
 
-function loadNpc(npc, npcState) {
+function loadNpc(npc, type, npcState) {
     Object.defineProperty(npc, 'show', {
         get: () => npcState.show,
         set: v => setBoolean(npcState, 'show', v)
@@ -57,6 +63,7 @@ function loadNpc(npc, npcState) {
         get: () => npcState.gifted,
         set: v => setBoolean(npcState, 'gifted', v)
     });
+    npc.type = type;
     npc.gifts = loadGifts(npc, npcState);
     return npc;
 }
