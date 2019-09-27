@@ -3,11 +3,11 @@ import m from 'mithril';
 
 const checkbox = {
     view(vnode) {
-        let checked = vnode.attrs.checked;
-        let disabled = vnode.attrs.disabled;
-        let label = vnode.attrs.label;
-        let onchange = vnode.attrs.onchange;
-        let onclick = () => {
+        const checked = vnode.attrs.checked;
+        const disabled = vnode.attrs.disabled;
+        const label = vnode.attrs.label;
+        const onchange = vnode.attrs.onchange;
+        const onclick = () => {
             if (!disabled && onchange) {
                 onchange(!checked);
             }

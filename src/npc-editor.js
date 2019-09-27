@@ -9,7 +9,7 @@ class NpcEditor {
     }
 
     view() {
-        let npc = this._npc;
+        const npc = this._npc;
         return m('div', { id: 'npc-editor' }, [
             m('label', 'Name:'),
             m('span', npc.name),

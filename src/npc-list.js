@@ -10,7 +10,7 @@ class NpcEntry {
     }
 
     view() {
-        let npc = this._npc;
+        const npc = this._npc;
         return m('li', { class: 'npc-entry' + (this._open ? ' open' : '') }, [
             m('div', { class: 'name' + (npc.show ? '' : ' disabled') }, [
                 m(Checkbox, {
