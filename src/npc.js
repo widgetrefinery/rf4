@@ -1,7 +1,8 @@
 import rawNpcs from './npc.json';
+import uniqueArray from './unique-array';
 
-var state = loadState();
-var npcs = loadNpcs();
+const state = loadState();
+const npcs = loadNpcs();
 npcs.types = getTypes(npcs);
 npcs.gifts = getGifts(npcs);
 
@@ -16,7 +17,7 @@ function compareName(a, b) {
 }
 
 function loadState() {
-    let state = window.localStorage.getItem('npcs');
+    const state = window.localStorage.getItem('npcs');
     return state ? JSON.parse(state) : {};
 }
 
@@ -34,20 +35,17 @@ function setBoolean(obj, key, value) {
 }
 
 function loadNpcs() {
-    let npcsState = state;
-    let index = {};
-    let list = [];
+    const npcsState = state;
+    const npcs = uniqueArray(v => v.name);
     for (let npc of rawNpcs) {
         if (!npcsState[npc.name]) {
             npcsState[npc.name] = {};
         }
         npc = loadNpc(npc, npcsState[npc.name]);
-        index[npc.name] = npc;
-        list.push(npc);
+        npcs.add(npc);
     }
-    list.sort(compareName);
-    list.get = x => index[x];
-    return list;
+    npcs.sort(compareName);
+    return npcs;
 }
 
 function loadNpc(npc, npcState) {
@@ -67,58 +65,38 @@ function loadGifts(npc, npcState) {
     if (!npcState.gifts) {
         npcState.gifts = {};
     }
-    let index = {};
-    let list = [];
-    for (let response of ['love', 'like']) {
-        for (let name of npc[response]) {
-            let gift = loadGift(name, response, npcState.gifts);
-            index[name] = gift;
-            list.push(gift);
+    const gifts = uniqueArray(v => v.name);
+    for (const response of ['love', 'like']) {
+        for (const name of npc[response]) {
+            const gift = loadGift(name, response, npcState.gifts);
+            gifts.add(gift);
         }
     }
-    list.sort(compareName);
-    list.get = x => index[x];
-    return list;
+    gifts.sort(compareName);
+    return gifts;
 }
 
 function loadGift(name, response, giftsState) {
-    let gift = {
+    return {
         name: name,
         response: response,
         get show() { return giftsState[name]; },
         set show(value) { setBoolean(giftsState, name, value); }
     };
-    return gift;
 }
 
 function getTypes(npcs) {
-    let index = {};
-    let list = [];
-    for (let npc of npcs) {
-        let type = npc.type;
-        if (!index[type]) {
-            index[type] = true;
-            list.push(type);
-        }
-    }
-    list.sort();
-    return list;
+    const types = uniqueArray(v => v);
+    npcs.forEach(x => types.add(x.type));
+    types.sort();
+    return types;
 }
 
 function getGifts(npcs) {
-    let index = {};
-    let list = [];
-    for (let npc of npcs) {
-        for (let gift of npc.gifts) {
-            let name = gift.name;
-            if (!index[name]) {
-                index[name] = true;
-                list.push(name);
-            }
-        }
-    }
-    list.sort();
-    return list;
+    const gifts = uniqueArray(v => v);
+    npcs.forEach(x => x.gifts.forEach(x => gifts.add(x.name)));
+    gifts.sort();
+    return gifts;
 }
 
 export default npcs;
