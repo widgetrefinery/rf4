@@ -15,6 +15,7 @@
 }
 
 #npc-list>ul {
+    align-content: start;
     display: grid;
     grid-gap: 0.25rem;
     grid-template-columns: 1fr;

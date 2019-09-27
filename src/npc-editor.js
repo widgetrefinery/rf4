@@ -15,10 +15,10 @@ class NpcEditor {
             m('span', npc.name),
             m('label', 'Type:'),
             m('span', npc.type),
-            m('label', 'Show:'),
+            m('label', 'Enabled:'),
             m(Checkbox, {
                 checked: npc.show,
-                label: 'show',
+                label: 'enabled',
                 onchange: v => npc.show = v
             }),
             m('label', 'Gifted:'),

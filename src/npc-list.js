@@ -34,11 +34,11 @@ class NpcEntry {
 
 class NpcList {
     constructor() {
-        this._types = [''].concat(Npc.types);
+        this._types = ['all'].concat(Npc.types);
         this._type = this._types[0];
-        this._gifts = [''].concat(Npc.gifts);
+        this._gifts = ['all'].concat(Npc.gifts);
         this._gift = this._gifts[0];
-        this._states = ['all', 'visible', 'gifted', 'need-gift'];
+        this._states = ['all', 'enabled', 'gifted', 'need-gift'];
         this._state = this._states[0];
     }
 
@@ -52,8 +52,8 @@ class NpcList {
         if ('need-gift' === this._state && npc.gifted) {
             return false;
         }
-        return ('' === this._type || npc.type === this._type)
-            && ('' === this._gift || npc.gifts.get(this._gift));
+        return ('all' === this._type || npc.type === this._type)
+            && ('all' === this._gift || npc.gifts.get(this._gift));
     }
 
     _ungiftAll() {
@@ -72,7 +72,7 @@ class NpcList {
                 value: this._gift,
                 onchange: e => this._gift = e.srcElement.value
             }, this._gifts.map(x => m('option', { key: x, value: x }, x))),
-            m('label', 'Show:'),
+            m('label', 'State:'),
             m('select', {
                 value: this._state,
                 onchange: e => this._state = e.srcElement.value
