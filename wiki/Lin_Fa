@@ -1,0 +1,104 @@
+{{Parent Tab Template
+ |tab1 = Main Page
+ |tab2 = Dialogue
+}}
+{{Infobox Character
+|image         =[[File:Lin_Fa.png]]
+|description   =Xiao Pai's mother. Tender and easygoing. Often makes terrible mistakes, but it always works out in the end as fortune smiles upon her.
+|alias         =
+|gender        =Female
+|birthday      =Spring 8
+|family        =Yan Fan (Husband)<br>[[Xiao Pai]] (Daughter)
+|appearances   =[[Lin Fa|RF4]]
+|seiyu         =Yumi Sudou
+|voice         =Wendee Lee
+}}
+{{Quote|Xiao Pai's mother and the owner of the Bell Hotel and bathhouse on the northwest part of Selphia. Her youthful appearance and ditzy, downright forgetful personality has earned her a fanbase among customers.|Website Description}}
+'''{{PAGENAME}}''' (リンファ, ''Rinfa'') is a [[:Category:Characters (RF4)|character]] in ''[[Rune Factory 4]]''.
+
+==Profile==
+===Personality===
+She is [[Xiao Pai]]'s light-hearted, beautiful, and dotty mother. Along with Xiao Pai, she runs the Bell Hotel in Selphia.
+
+Lin Fa's forgetfulness makes others find her endearing, and if her mix-ups don't actually bring good fortune than people are still willing to let it slide, much to Xiao Pai's envy.
+
+===Appearance===
+Lin Fa has a light complexion with slanted brown eyes. Her long gray hair is worn loose with a white pearl accessory, and she wears blue earrings.
+
+==Story==
+Lin Fa is married to her husband, '''Yan Fan''', appears in town as an unseen NPC during two sub-events. Because Yan Fan travels often, [[Xiao Pai]] is closer to her mother than to her father. However, Lin Fa always lets her daughter know when Yan Fan sends them a letter from abroad. She's also prone to teasing Xiao Pai, especially when it comes to the prospect of liking someone.
+
+==Events==
+[[Lin Fa]] take parts into 3 different events who occur randomly.
+
+;[[Town Events (RF4)|Oh No, It's Contagious!]]
+:Characters : [[Xiao Pai]], [[Lin Fa]]
+
+;[[Town Events (RF4)|A Copper's Windfall]]
+:Characters : [[Lin Fa]], [[Bado]], [[Kiel]], [[Xiao Pai]]
+
+;[[Town Events (RF4)#part-time|A Part-Time Job]]
+:Characters : [[Kiel]], [[Xiao Pai]], [[Lin Fa]], [[Doug]], [[Illuminata]]
+
+==Requests==
+There are no Requests in ''Rune Factory 4''.
+
+==Relationships==
+Because Lin Fa's popularity around tourists indirectly contributed to Xiao Pai's partial inferiority complex, she does everything she can to help improve her daughter's self-confidence and popularity. She thinks Xiao Pai is adorable, but seems oblivious to the adoration she brings in.
+
+In the Japanese game, she addresses Xiao Pai as "Xiao-chan" and Yan Fan as "Papa-san".
+
+==Gifts==
+{{Gifts
+|LovedResponse    ={{Switch|option1=Reaction 1|''Oh! Is that {{Blue|word=Milk Porridge}}? Oh my! Oh my my my! How wonderfully thoughtful of you! I'll enjoy this very much!''|option2=Reaction 2|''{{Blue|word=Milk Porridge}}? Really? Oh my! I {{Blue|word=love}} that! Are you sure I may have it? Yay! ♪''}}
+|LovedGifts       =Milk Porridge 
+|LikedResponse    ={{Switch|option1=Reaction 1|Oh my! {{Blue|word=Rice Porridge}}. Thank you! I {{Blue|word=like}} these!|option2=Reaction 2|Thank you! I {{Blue|word=like}} rice dishes a lot. ♪ You wouldn't think so, but milk goes well with rice. I {{Blue|word=like}} both quite a lot. |option3=Reaction 3|Oh my! Is this for me? Thank you! I {{Blue|word=like}} rice dishes a lot. ♪ You wouldn't think so, but milk goes well with rice. I {{Blue|word=like}} both quite a lot.|option4=Reaction 4|My, my! Thank you! Milk tastes very {{Blue|word=yummy}}, don't you think? Drinking lots of milk helps you grow, you know.|option5=Reaction 5|Oh my! Is that {{Blue|word=Milk (M)}}? And it's for me! Why thank you!|option6=Reaction 6|My my! ♪ Is that {{Blue|word=Meat Dumpling}}? Aren't those yummy? Hee hee ♪ Thank you! It's lovely. ♪
+}}
+|LikedGifts       =Rice Porridge, Tempura Bowl, Egg Bowl, Onigiri, Baked Onigiri, Salmon Onigiri, Milk (M), Meat Dumpling, Chinese Manju, Bamboo Rice, Rice, Hot Milk, Gyoza
+|NeutralResponse  ={{Switch|option1=Reaction 1|''My, my! Why thank you. Hmm? What do I like? Well, I {{Blue|word=like}} dishes with a lot of rice in them.''|option2=Reaction 2|''My, my! Why thank you. Hmm? What do I like? I think {{Blue|word=Chinese food}} is yummy.''|option3=Reaction 3|''Oh my, a present for me? Why thank you. Hmm? What do I like? Well, I {{Blue|word=like}} dishes with a lot of rice in them.''|option4=Reaction 4|''Oh my, a present for me? Why thank you. Hmm? What do I like? I think {{Blue|word=Chinese food}} is yummy.''|option5=Reaction 5|''{{Blue|word=_____}}? Why thank you. Hmm? What do I like? Well, I {{Blue|word=like}} dishes with a lot of rice in them.''|option6=Reaction 6|''{{Blue|word=_____}}? Why thank you. Hmm? What do I like? I think {{Blue|word=Chinese food}} is yummy.''|option7=Reaction 7|''It's lovely. Thank you. Hmm? What do I like? Well, I {{Blue|word=like}} dishes with a lot of rice in them.''
+}}
+|NeutralGifts     =[[Shipping_List_(RF4)|Ingredients]], Hot Chocolate, Stew, Curry Rice, Flan, Egg (M), 
+|DislikedResponse ={{Blue|word=_____}}? I see. ... Oh, it's for me? I'm sorry, I wasn't interested, so I didn't pay any attention. Here, let me throw it away for you. In exchange, it would be lovely if you could bring me some {{Blue|word=Milk Porridge}}.
+|DislikedGifts    =Udon, Curry Udon, Tempura Udon, 
+}}
+
+==Battle==
+{{SMTDSStats
+|Image=[[File:Lin Fa (Rinfa) - short portrait (MARV JP).png]]
+|lvl=4
+|hp=210
+|atk=90
+|def=14
+|mgcatk=6
+|mgcdef=30
+|str=23
+|vit=11
+|int=6
+|wdef=Safety Lance
+|wtype=Spear
+}}
+==Schedule==
+==Gallery==
+<gallery captionalign="center" widths="187" position="center" columns="dynamic" spacing="small" orientation="none">
+Lingfa thumb.jpg
+Lin_Fa thinking.png
+LinFaPleased.jpg
+LinFaSmile.jpg
+LinFaSweatdrop1.jpg
+Lin fa 1.jpg|Oh, Frei-chan.
+Lin Fa 2.jpg
+Lin Fa Happy.jpg|Shao-chan is my cute only daughter♪
+</gallery>
+
+===Art===
+===Sprites===
+==Trivia==
+*Lin in Chinese means 'forest' or 'woods' and Fa in Chinese concept meaning for 'laws', 'ethics', and 'logic'. So, Lin Fa literally means 'Laws and Orders of the Forest' if translated through the name purpose.
+*Lin Fa --along with [[Nancy]], [[Rita]], and [[Sabrina]]-- are among the few mothers in the RF series who aren't single.
+*Lin Fa and Xiao Pai are the second occurrence of Asian styled characters running the Inn, preceded by [[Sakuya]] and [[Shino]].
+*Lin Fa has the same birthday as [[Hazel]] and [[Nolan]] from ''Rune Factory Frontier'' and ''Rune Factory 3''.
+* Lin Fa's accident prone nature is implied to go further beyond losing plates. At friendship level 5, she admits to Lest, "...without that particular mistake, Xiao wouldn't be here now...", which leads to a "Wh-what?!" response from Lest. The matter is then dropped, however.
+* Lin Fa shares her voice actress with [[Ventuswill|Ventuswill.]] They are both voiced by Wendee Lee (who also voiced [[Selphy]] in ''[[Rune Factory: Frontier]]''.)
+
+{{RF4CharaNav}}
+[[Category:Characters (RF4)]]

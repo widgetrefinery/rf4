@@ -1,0 +1,105 @@
+{{Parent Tab Template
+ |tab1 = Main Page
+ |tab2 = Dialogue
+}}
+{{Infobox Character
+|image         =[[File:Nancy_REAL.png]]
+|description   =Wife of Dr. Jones and nurse at the local clinic. Loves her husband immensely and always strives to be the best wife she can be for him. Sweet, kind and always considerate of patients' feelings.
+|alias         =
+|gender        =Female
+|birthday      =Fall 23
+|family        =[[Jones]] (husband)
+|appearances   =[[Nancy|RF4]]
+|seiyu         =Umeka Shouji
+|voice         =
+}}
+'''{{PAGENAME}}''' (ナンシー, ''Nanshii'') is a [[:Category:Characters (RF4)|character]] in ''[[Rune Factory 4]]''.
+==Profile==
+===Personality===
+Wife of Dr. Jones and nurse at the local clinic. Loves her husband immensely and always strives to be the best wife she can be for him. Sweet, kind and always considerate of patients' feelings.
+===Appearance===
+Nancy has long blonde hair styled in low ponytail with her bangs parted, and blue eyes. She always wears a pink nurse cap and can't be seen without it.
+
+==Story==
+When Nancy was younger, she often found herself falling down and going to the clinic. She claims this was due to her becoming weak in the knees when seeing [[Jones]]. When she was young, she had many dreams, including getting married to someone she loved, becoming a nurse, and being a good mother. She took up nursing because she wanted to help [[Jones]] save people.
+
+Nancy is a nurse and runs the Little Bandage clinic alongside her husband in order to help the people of Selphia. Forte was often brought to the clinic in the past.
+
+==Events==
+{{Main|Town Events (RF4)}}
+
+==Requests==
+N/A
+
+==Relationships==
+Nancy is [[Jones]]' wife. Her relationship with Jones can be a little too sweet to some and makes the older residents of town feel uncomfortable, though the bachelorettes have shown envy of their relationship. A few people in town (such as [[Blossom]] and [[Volkanon]]) comment on how their relationship is wonderful but their public displays of affection make them feel awkward or embarrassed.
+
+Once Lest/Frey has unlocked [[Dolce]], she will live with Nancy and Jones. Nancy quickly grows to see Dolce as her beloved daughter.
+
+Nancy also creates an anniversary for various things in her life, including a "Hero's Proof" anniversary and an anniversary for when they took in [[Dolce]]. Nancy talks about how she became a nurse in order to help people.
+
+==Gifts==
+{{Gifts
+|LovedResponse    =''Oh my...! Is that [[Stew]]? And I may have it? Really? Thank you! I {{Blue|love}} it!''<br>''My, my! [[Stew]] for me? Thank you. To me, [[Stew]] is the king of all {{Blue|Western foods}}. I like it quite a lot, if you haven't guessed. Well, maybe not as much as Jones does, but still.''
+|LovedGifts       ={{RF4I|Stew}}
+|LikedResponse    =<tabber>
+Cheese=Oh, is that ＠アイテム９＠? Thank you. I've always {{Blue|liked}} the scent of good {{Blue|cheese}}.<br>Hm? I smell delicious {{Blue|cheese}}. Oh? It's for me? Why thank you! It looks very tasty.
+|-|Omelet=Oh, that looks delicious! ♪ May I have some? I'm quite {{Blue|fond}} of {{Blue|Western foods}}, you know. Thank you! I will enjoy it later.
+|-|Other Food=Oh, is that some [{{Blue|item}}]? Now if only I had some [[Flan|flan]] to go with it for dessert, it would be the perfect meal. ♪
+|-|Flan=Why thank you! ♪ That looks like a delicious ＠アイテム９＠. Oh, one of my ＋favorite things＋!<br>My, my! [[Flan]]! Thank you! I ＋like＋ all ＋Western foods＋, but this is the very best dish for dessert. Jones is fond of it, too!
+|-|Moondrop=Oh my, ＠アイテム９＠ for me? Why thank you! I think I'll put it in a pretty vase. I'm sure Dolly will love it too. Maybe she'll like it enough to give me a hug!
+</tabber>
+|LikedGifts       ={{RF4I|Moondrop Flower}} {{RF4I|Omelet}} {{RF4I|Omelet Rice}} {{RF4I|Risotto}} {{RF4I|Cheese Fondue}} {{RF4I|Doria}} {{RF4I|Seafood Doria}} {{RF4I|Gratin}} {{RF4I|Seafood Gratin}} {{RF4I|Cheesecake}} {{RF4I|Flan}} {{RF4I|Pumpkin Flan}} {{RF4I|Cheese}}
+|NeutralResponse  =Oh, thank you!<br>Oh my, a present for me? Thank you.<br>Oh, is that ＠アイテム９＠ for me? Thank you.<br>Is this for me? How thoughtful of you.
+|NeutralGifts     =[[Mealy Apple]], [[Toyherb]], {{RF4I|Pom-Pom Grass}} {{RF4I|Fried Rice}} {{RF4I|French Fries}} {{RF4I|Croquette}} {{RF4I|Popcorn}} {{RF4I|Corn Cereal}} {{RF4I|Miso Eggplant}} {{RF4I|Fried Eggs}} {{RF4I|Baked Apple}} {{RF4I|Curry Bread}} {{RF4I|French Toast}} {{RF4I|Donut}} {{RF4I|Fried Udon}} {{RF4I|Pancakes}} {{RF4I|Dry Curry}} {{RF4I|Hot Milk}} {{RF4I|Hot Chocolate}} {{RF4I|Grape Liqueur}} {{RF4I|Boiled Pumpkin}} {{RF4I|Egg Plant}} {{RF4I|Relax Tea}} {{RF4I|Union Stew}} {{RF4I|Yam of the Ages}} {{RF4I|Cookie}} {{RF4I|Choco Cookie}} {{RF4I|Cake}} {{RF4I|Chocolate Cake}} {{RF4I|Apple Pie}} {{RF4I|Pound Cake}}, [[Chocolate Sponge]]
+{{RF4I|Sunsquid}} {{RF4I|Blowfish}}, 
+|DislikedResponse =<tabber>
+Trash=''Hey now! No leaving trash around! No one with their heart in the right place would ever do that!''|-|Poisonous Fish=''Oh my! How...how poisonous! Only someone with a tired soul would force something this hideous on another!''</tabber>
+|DislikedGifts    ={{RF4I|Weeds}} {{RF4I|Withered Grass}} {{RF4I|Object X}} {{RF4I|Failed Dish}} {{RF4I|Disastrous Dish}} {{RF4I|Rainbow Sashimi}} {{RF4I|Lamp Squid Sashimi}} {{RF4I|Rainbow Trout}} {{RF4I|Lamp Squid}} {{RF4I|Scrap Metal}}
+}}
+
+==Battle==
+{{RF4Stats
+|Lv      =12
+|HP      =700
+|ATK     =45
+|DEF     =10
+|MATK    =48
+|MDEF    =9
+|STR     =21
+|VIT     =19
+|INT     =48
+|type    =
+|default ={{RF4I|Leather Gloves}}
+}}
+
+==Schedule==
+Nancy will not charge the player money for fainting if she's working at the clinic.
+
+==Gallery==
+<gallery captionalign="center" widths="187" position="center" columns="dynamic" spacing="small">
+Nancy.png
+OtherCharaRF4.jpg|<nowiki>{{PAGENAME}}</nowiki> and her husband in the anime scene.
+Nancy_and_Jones.jpg|<nowiki>{{PAGENAME}}</nowiki> with her [[Jones|husband]]
+Nancy_(Dungeon-.jpg
+Nancy Town center day.jpg
+Nancy and Jones happy.jpg
+Nancy and Lest.jpg
+Nancy dawn.jpg
+Nancy Bench.jpg
+Nancy Blood.png
+34gt65u.jpg
+Rf4 nancy 01.jpg
+</gallery>
+===Sprites===
+==Trivia==
+*When Love Potion is given to Nancy, she will accept it. However Nancy will not show any sign of affection toward Lest/Frey, instead she will say:
+**"Oh, I know what that is. It's Love Potion, isn't it?"
+**"Of course I'm familiar with it. Why, when i was young, I..."
+**"..."
+**"Love is something that will make itself felt, without you needing to resort to potions, you know."
+**"Good luck! Oh, and just to be clear, Jones is the only one for me."
+*Implying that she was a victim or abuser of Love Potion when she was young.
+
+{{RF4CharaNav}}
+[[Category:Characters (RF4)]]

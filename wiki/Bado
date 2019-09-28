@@ -1,0 +1,86 @@
+{{Parent Tab Template
+ |tab1 = Main Page
+ |tab2 = Dialogue
+}}
+{{Infobox Character
+|image         =[[File:Bade2.png]]
+|description   =A lazy, lazy blacksmith. Always tries to get rich quick, but always fails hard. He claims to enjoy the attempt, however. Despite all this his skills are second to none.
+|alias         =
+|gender        =Male
+|birthday      =Winter 10
+|family        =
+|appearances   =[[Bado|RF4]]
+|seiyu         =Osamu Ryuutani 
+|voice         =D.C. Douglas
+}}
+'''{{PAGENAME}}''' (バド, ''Bado'') is a [[:Category:Characters (RF4)|character]] in ''[[Rune Factory 4]]''.
+
+==Profile==
+===Personality===
+He is a dwarf and a blacksmith who has little enthusiasm for work. What Bado really wants in life is money, and his lack of ambition in his work spills into this goal, as he doesn't have any particular idea what he'd do if he got rich. Rather than take the time to make quality weapons, Bado would rather think of get rich quick schemes. Despite this attitude, he doesn't particularly like scamming people, so many of his efforts fall flat. He will constantly promote things that sound useful (or not) but are quickly revealed to be rubbish if the player takes a closer look at their title.
+
+===Appearance===
+Bado is a plump man with slightly tanned skin and small blue eyes, matching his short hair and beard. His ears are pointed, like [[Doug]] and [[Margaret]].
+
+==Story==
+Because he wants to appear a very busy man, Bado likes useless items like Scrap Metal, which he can litter around his work area. Unsurprisingly, his lack of work ethic and many failed schemes often leave his business in the red. Many of the townsfolk, particularly [[Forte]], are constantly on his case to do his job. His constant failure is even a joke among some. Nonetheless, he persists in his lazy and irresponsible ways. He will even advertise some of his latest crazy scams in the middle of festivals.
+
+Despite this, Bado does have talent. While most of the swords he makes are so dull they make for better bludgeons than blades, the sword he made for Kiel and Forte's father was so finely crafted that no matter what strain was put on it, it never broke. Bado is also incredibly strong, and can lift large crates of weapons with a single arm, much to the surprise of the protagonist.
+
+==Event==
+{{Main|Town Events (RF4)}}
+
+==Relationships==
+[[Vishnal]] and [[Kiel]] are the only people in town who might not see through him.
+
+==Gifts==
+{{Gifts
+|LovedResponse    =''"What, you have something for me? Oh hey, [{{Blue|Item}}]! Can I have it? Thanks! I {{Blue|love}} these things."''<br>''"Is this [{{Blue|Item}}] for me? It is? Great! Thanks. See, I {{Blue|love}} rice bowl dishes."''
+|LovedGifts       ={{RF4I|Tempura Bowl}}, {{RF4I|Egg Bowl}}
+|LikedResponse    =<tabber>
+Scrap Metal="''Oh, hey! ＠アイテム９＠! Thanks. I {{Blue|like}} these.''"<br>"''I like [[Scrap Metal]], because it's pretty much useless. But if I have a lot of them lying around, it looks like I'm working when I'm really not.''"
+|-|Onigiri="''Oh, hey! [{{Blue|Item}}]! Thanks! I carried these around a lot once, so I guess I got used to eating them. Somehow, that turned into {{Blue|liking}} them. Funny, isn't it?''"<br>"''Oh hey, an onigiri. Is it for me? Thanks. I {{Blue|like}} these.''"
+</tabber>
+|LikedGifts       ={{RF4I|Scrap Metal}}, {{RF4I|Onigiri}}, {{RF4I|Salmon Onigiri}}, 
+|NeutralResponse  =Hey, can I have this? Thanks.<br>Thanks. I appreciate it.<br>Hey, ＠アイテム９＠! Is it for me?<br>It is? Great! Thanks!
+|NeutralGifts     ={{RF4I|Udon}}, {{RF4I|Curry Udon}}, {{RF4I|Tempura Udon}}, {{RF4I|Scrap Metal+}}
+|DislikedResponse =<tabber>
+Ore="''Ore, eh? This stuff is only really useful for forging things, so I don't need it. ...What. Did I say something weird?''"
+|-|Cheese=Urf...[{{Blue|Item}}]. Y'know, I {{Blue|don't like}} the smell of cheese, and this here smells like it a lot. Funnily enough, if you mix it with {{Blue|things I love}}, it isn't all that bad. Things like, say, [[Egg Bowl]].
+</tabber>
+|DislikedGifts    ={{RF4I|Cheese Fondue}}, {{RF4I|Iron}}, {{RF4I|Bronze}}
+}}
+
+==Battle==
+{{RF4Stats
+|Lv      =35
+|HP      =2400
+|ATK     =181
+|DEF     =49
+|MATK    =8
+|MDEF    =49
+|STR     =120
+|VIT     =98
+|INT     =8
+|type    =Longsword
+|default ={{RF4I|Zweihaender+}}
+}}
+
+==Schedule==
+==Gallery==
+<gallery captionalign="center" widths="187" position="center" columns="dynamic" spacing="small">
+Bade.png
+Unknown1.png
+Bade1.jpg
+Bade2.jpg
+Bade and Frey.jpg
+</gallery>
+===Sprites===
+
+==Trivia==
+*Bado shares the same birthday as [[Herman]] from ''[[Rune Factory 2: A Fantasy Harvest Moon|Rune Factory 2]]''.
+*Just like [[Sakuya]], Bado loves the thought of making money, but in a totally different way.  As for Sakuya, she is very enthusiastic about her job of selling items at her small store in Miyako Inn, not scamming people, while Bado on the other hand comes up with ridiculous (and maybe unbelievable) scam tricks.  Despite their different ways of how they try to make money, they hope to become extremely rich someday.  They also will comment about making money when you try to sleep in their bed, such as Sakuya offering to let you sleep in her futon if you give her plenty of gold, while Bado jokingly offers a bed to a customer with him sleeping beside you.
+* Despite coming up with scam ploys, he actually hates it when they seem to be succeeding and coaxes his customers out of the deal, such as when Lest and Frey were offered Amnesia medicine.
+* Bado has the same English voice actor as [[Dylas]]. They are both voiced by DC Douglas.
+{{RF4CharaNav}}
+[[Category:Characters (RF4)]]

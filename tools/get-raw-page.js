@@ -3,7 +3,7 @@ const https = require('https');
 const path = require('path');
 
 const AGENT = new https.Agent({ keepAlive: true, maxSockets: 1, maxFreeSockets: 1 });
-const CACHE_DIR = path.join(path.dirname(__dirname), 'tmp');
+const CACHE_DIR = path.join(path.dirname(__dirname), 'wiki');
 
 function download(url, cacheFile) {
     if (!fs.existsSync(CACHE_DIR)) {

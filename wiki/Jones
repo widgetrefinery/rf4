@@ -1,0 +1,96 @@
+{{Parent Tab Template
+ |tab1 = Main Page
+ |tab2 = Dialogue
+}}
+{{Infobox Character
+|image         =[[File:Jones_(RF4).png]]
+|description   =The only doctor in town. Tries to save as many people as possible, but hates blood and goes crazy when he sees it. Tries to drink tomato juice every day to overcome his crippling phobia. Married to [[Nancy]].
+|alias         =
+|gender        =Male
+|birthday      =Winter 7
+|family        =[[Nancy]] (Wife)
+|appearances   =[[Jones|RF4]]
+|seiyu         =Shunzou Miyasaka
+|voice         =Sam Riegel
+}}
+'''{{PAGENAME}}''' (ジョーンズ ''Joonzu'') is a [[:Category:Characters (RF4)|character]] in ''[[Rune Factory 4]]''.
+
+==Profile==
+===Personality===
+Jones is a doctor and runs the Little Bandage Clinic with his wife. He has a fear of blood and tries to overcome it by drinking tomato juice daily. His fear of blood has also led him to practice treating bleeding wounds with his eyes closed.
+
+===Appearance===
+Jones is a man with pale skin and turquoise eyes that he covers with a pair of glasses. His messy gray hair is worn with a brown laurel wrath. He wears a doctor's outfit.
+
+==Story==
+Jones mentions that he had a dream to be a farmer when he was a little boy but he was better suited to be a doctor.
+
+==Events==
+{{Main|Town Events (RF4)}}
+
+==Requests==
+There are no Requests in ''Rune Factory 4''.
+
+==Relationships==
+He is [[Nancy]]'s husband, meaning they're the third couple in Rune Factory series (the first one being [[Sabrina]] and [[Neumann]] with [[Rita]] and [[Turner]] being the second one).
+
+He and Nancy do not yet have any children; Nancy mentions that they haven't decided when to start a family yet. [[Dolce]] moves in with them after being freed by [[Lest and Frey|Lest/Frey]], becoming something of an adopted daughter to them.
+
+==Gifts==
+{{Gifts
+|LovedResponse    ="''That [[Fried Rice]] looks tasty. Oh? It's for me? Why thank you. I {{Blue|love}} this dish, you know.''"<br>"''Oh, some [[Fried Rice]]? Thank you. This is a {{Blue|favorite}} of mine, you know. I learned to love it after Nancy made some for me.''"
+|LovedGifts       ={{RF4I|Fried Rice}}
+|LikedResponse    =<tabber>
+Eastern Food="Oh, some [{{Blue|Item}}]. And I may have it? Why thank you. I {{Blue|like Eastern foods}} quite a bit. Dishes like {{Blue|sashimi}} are light and easy to eat."<br>"''Oh, is this for me? Thank you. Many {{Blue|Eastern foods}}, like fish, are full of healthy nutrients. Although I would still {{Blue|like}} them even if they were not.''"
+|-|Flan="''Thank you. This looks like some very tasty [[Flan]]. Sweets are an effective pick-me-up when you are feeling mentally tired. That's an excuse I use often when I feel the urge to snack on some.''"<br>"''It isn't that I have a particular fondness for sweets. I {{Blue|like}} this dish specifically. You see, when I was little, [[Flan]] was a treat I could have only when I was sick. I guess that feeling must have simply stuck with me through the years.''"
+|-|Moondrop="''Oh, thank you for the [{{Blue|Item}}]. I think I'll put it in the vase Dolce gave to me as a present. I'm sure Pico will love it. I can't wait to show it to her.''"
+</tabber>
+|LikedGifts       ={{RF4I|Moondrop Flower}}, {{RF4I|Ultra Moondrop Flower}}, {{RF4I|Trout Sashimi}}, {{RF4I|Miso Eggplant}}, {{RF4I|Tempura}}, {{RF4I|Salted Masu Trout}}, {{RF4I|Grilled S.Flounder}}, {{RF4I|Udon}}, {{RF4I|Tempura Udon}}, {{RF4I|Grilled Miso}}, {{RF4I|Flan}}
+
+
+
+|NeutralResponse  =＠アイテム９＠? Why thank you.<br>Oh, why thank you.<br>Thank you very much.<br>＠アイテム９＠ for me? Why thank you.
+|NeutralGifts     ={{RF4I|Curry Udon}}, {{RF4I|Tempura Bowl}}, 
+
+
+
+|DislikedResponse =<tabber>
+Garbage=''...This is garbage, I see. Please throw it into a trash bin. Filth can cause illness, after all.''
+|-|Blood=''I-is this...blood?! O-oh...it's just [{{Blue|Item}}]. Ha ha...whew. I-I'm all right.''</tabber>
+|DislikedGifts     ={{RF4I|Failed Dish}}, {{RF4I|Disastrous Dish}}, {{RF4I|Tomato Juice}}, {{RF4I|Ketchup}}, {{RF4I|Scrap Metal}}, {{RF4I|Devil Blood}}, {{RF4I|Can}}, {{RF4I|Boot}}, {{RF4I|Rare Can}}, {{RF4I|Rock}}, {{RF4I|Branch}}
+}}
+
+==Battle==
+{{RF4Stats
+|Lv      =15
+|HP      =820
+|ATK     =40
+|DEF     =1
+|MATK    =100
+|MDEF    =1
+|STR     =12
+|VIT     =2
+|INT     =100
+|type    =
+|default ={{RF4I|Short Dagger}}
+}}
+
+==Schedule==
+==Gallery==
+<gallery captionalign="center" widths="187" position="center" columns="dynamic" spacing="small">
+Jones Happy.png
+OtherCharaRF4.jpg|{{PAGENAME}} and his wife in the anime scene.
+Nancy_and_Jones.jpg|{{PAGENAME}} with his wife, [[Nancy]].
+Jones_in_game.jpg|{{PAGENAME}} in game
+Jones.jpg
+Jones1.jpg
+Jones2.jpg
+Clinic 1.jpg
+Clinic 2.jpg
+</gallery>
+===Sprites===
+==Trivia==
+*Jones and [[Arthur]] share the same English voice actor, Sam Riegel.
+*If given a [[Moondrop]], Jones will mention [[Dolce]] and [[Pico]], even if they hadn't been unlocked. 
+{{RF4CharaNav}}
+[[Category:Characters (RF4)]]
