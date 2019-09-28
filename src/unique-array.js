@@ -1,6 +1,6 @@
 function uniqueArray(valueToKey) {
-    let index = {};
-    let list = [];
+    const index = {};
+    const list = [];
     list.add = v => {
         const key = valueToKey(v);
         if (!index[key]) {
