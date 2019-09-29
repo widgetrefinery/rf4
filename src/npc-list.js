@@ -34,30 +34,32 @@ class NpcEntry {
 
 class NpcList {
     constructor() {
-        this._types = ['all'].concat(Npc.types);
+        this._types = ['All'].concat(Npc.types);
         this._type = this._types[0];
-        this._gifts = ['all'].concat(Npc.gifts);
+        this._gifts = ['All'].concat(Npc.gifts);
         this._gift = this._gifts[0];
-        this._states = ['all', 'enabled', 'gifted', 'need-gift'];
+        this._states = ['All', 'Enabled', 'Gifted', 'Need Gift'];
         this._state = this._states[0];
     }
 
     _include(npc) {
-        if ('all' !== this._state && !npc.show) {
+        if ('All' !== this._state && !npc.show) {
             return false;
         }
-        if ('gifted' === this._state && !npc.gifted) {
+        if ('Gifted' === this._state && !npc.gifted) {
             return false;
         }
-        if ('need-gift' === this._state && npc.gifted) {
+        if ('Need Gift' === this._state && npc.gifted) {
             return false;
         }
-        return ('all' === this._type || npc.type === this._type)
-            && ('all' === this._gift || npc.gifts.get(this._gift));
+        return ('All' === this._type || npc.type === this._type)
+            && ('All' === this._gift || npc.gifts.get(this._gift));
     }
 
     _ungiftAll() {
-        Npc.forEach(x => x.gifted = false);
+        if (window.confirm('Really ungift everyone?')) {
+            Npc.forEach(x => x.gifted = false);
+        }
     }
 
     view() {
