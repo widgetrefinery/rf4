@@ -14,7 +14,14 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            minify: {
+                collapseWhitespace: true,
+                removeComments: true,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true
+            }
         }),
         new MiniCssExtractPlugin({
             filename: '[contenthash].css',
