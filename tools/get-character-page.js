@@ -141,7 +141,7 @@ async function parseGift(text, gifts) {
         text = text.substring(1 + text.indexOf('|'), text.length - 2);
     } else if (text.startsWith('{{') && text.endsWith('}}')) {
         for (const gift of await getTemplate(text)) {
-            gifts.add(gift.toLowerCase());
+            gifts.add(gift);
         }
         return;
     }
@@ -157,7 +157,7 @@ async function parseGift(text, gifts) {
     }
     text = text.trim();
     if (text) {
-        gifts.add(text.toLowerCase());
+        gifts.add(text);
     }
 }
 
