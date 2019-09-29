@@ -1,5 +1,5 @@
 {
-    "bachelorette": [
+    "Bachelorettes": [
         {
             "name": "Margaret",
             "love": [
@@ -17,7 +17,7 @@
                 "flowers",
                 "mushrooms",
                 "apple pie",
-                "cakes and cookies",
+                "cake",
                 "choco cookie",
                 "ice cream",
                 "strawberry milk",
@@ -34,8 +34,7 @@
                 "union stew"
             ],
             "like": [
-                "eggs",
-                "egg dishes",
+                "eggs and egg dishes",
                 "pot dishes",
                 "western sweets",
                 "flowers"
@@ -60,7 +59,7 @@
                 "sewing material",
                 "moondrop grass",
                 "ice cream",
-                "cookies and other deserts"
+                "cookies and other desserts"
             ]
         },
         {
@@ -95,7 +94,7 @@
             ],
             "like": [
                 "apple",
-                "apple dishes",
+                "apple dishes (e.g. baked apple)",
                 "silver",
                 "gold",
                 "jewelry",
@@ -107,6 +106,7 @@
             "name": "Amber",
             "love": [
                 "mixed smoothie",
+                "gold juice",
                 "emery flower"
             ],
             "like": [
@@ -128,7 +128,7 @@
             ]
         }
     ],
-    "bachelor": [
+    "Bachelors": [
         {
             "name": "Vishnal",
             "love": [
@@ -160,7 +160,12 @@
                 "lover sashimi",
                 "tuna sashimi",
                 "sunsquid sashimi",
-                "glitter sashimi"
+                "glitter sashimi",
+                "milk porridge",
+                "tuna",
+                "lover snapper",
+                "glitter snapper",
+                "sunsquid"
             ],
             "like": [
                 "pike sashimi",
@@ -183,7 +188,13 @@
                 "fall sashimi",
                 "yellowtail sashimi",
                 "blowfish sashimi",
-                "taimen sashimi"
+                "taimen sashimi",
+                "milk (m)",
+                "all fish",
+                "carrot",
+                "milk",
+                "milk dishes",
+                "sashimi"
             ]
         },
         {
@@ -207,7 +218,7 @@
             ],
             "like": [
                 "pink turnip",
-                "collosal pink",
+                "colossal pink",
                 "turnip",
                 "onigiri",
                 "pickled turnip",
@@ -255,17 +266,16 @@
                 "charm blue",
                 "rainbow sashimi",
                 "lamp squid sashimi",
-                "grilled s. flounder",
+                "grilled s.flounder",
                 "grilled shrimp",
                 "salted char",
                 "salted chub",
-                "grilled snapper",
                 "grilled l. snapper",
                 "grilled skipjack",
                 "grilled mackerel",
                 "salted pike",
                 "grilled turbot",
-                "grilled f. flounder",
+                "grilled f.flounder",
                 "grilled squid",
                 "blue lamp grass",
                 "lamp squid",
@@ -275,7 +285,7 @@
             ]
         }
     ],
-    "resident": [
+    "Villagers": [
         {
             "name": "Volkanon",
             "love": [
@@ -301,7 +311,7 @@
                 "miso eggplant",
                 "tempura",
                 "salted masu trout",
-                "grilled s. flounder",
+                "grilled s.flounder",
                 "udon",
                 "tempura udon",
                 "grilled miso",
@@ -326,7 +336,7 @@
                 "cheesecake",
                 "flan",
                 "pumpkin flan",
-                "cheese bread"
+                "cheese"
             ]
         },
         {
@@ -342,7 +352,7 @@
                 "baked onigiri",
                 "salmon onigiri",
                 "milk (m)",
-                "meat dumplings",
+                "meat dumpling",
                 "chinese manju",
                 "bamboo rice",
                 "rice",
@@ -358,17 +368,17 @@
             ],
             "like": [
                 "honey",
-                "mushrooms",
+                "mushroom",
                 "vegetables"
             ]
         },
         {
-            "name": "Procoline",
+            "name": "Porcoline",
             "love": [
                 "cabbage",
                 "pumpkin",
                 "bamboo shoot",
-                "mushrooms"
+                "mushroom"
             ],
             "like": [
                 "baked apple"
@@ -384,7 +394,7 @@
                 "toast",
                 "bread",
                 "yam of the ages",
-                "cookies and other deserts",
+                "cookie",
                 "choco cookie",
                 "cake",
                 "chocolate cake",
@@ -396,7 +406,7 @@
                 "strawberry jam",
                 "marmalade",
                 "pound cake",
-                "chocoloate sponge",
+                "chocolate sponge",
                 "toyherb",
                 "autumn grass",
                 "dumplings"
@@ -428,7 +438,7 @@
             ]
         }
     ],
-    "visitor": [
+    "Guest Characters": [
         {
             "name": "Raven",
             "love": [

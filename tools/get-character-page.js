@@ -3,9 +3,24 @@ const getTemplate = require('./get-template');
 
 const TEXT_HEADING_REGEX = /'''([^:']+):'''$/;
 
+function uniqueArray(valueToKey) {
+    const index = {};
+    const list = [];
+    list.add = v => {
+        const key = valueToKey(v);
+        if (!index[key]) {
+            index[key] = v;
+            list.push(v);
+        }
+        return list;
+    };
+    list.get = v => index[v];
+    return list;
+}
+
 async function get({ name, link }) {
     const text = await getRawPage(link);
-    const npc = { name: name, love: [], like: [] };
+    const npc = { name: name, love: uniqueArray(v => v), like: uniqueArray(v => v) };
     // get the start/end offsets for the Gifts section
     const giftsSectionStart = text.indexOf('\n==Gifts==\n');
     if (0 > giftsSectionStart) {
@@ -126,7 +141,7 @@ async function parseGift(text, gifts) {
         text = text.substring(1 + text.indexOf('|'), text.length - 2);
     } else if (text.startsWith('{{') && text.endsWith('}}')) {
         for (const gift of await getTemplate(text)) {
-            gifts.push(gift.toLowerCase());
+            gifts.add(gift.toLowerCase());
         }
         return;
     }
@@ -142,7 +157,7 @@ async function parseGift(text, gifts) {
     }
     text = text.trim();
     if (text) {
-        gifts.push(text.toLowerCase());
+        gifts.add(text.toLowerCase());
     }
 }
 
