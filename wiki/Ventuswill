@@ -51,19 +51,16 @@ More than anything else, Venti doesn't want to be alone. She's lost numerous fri
 ==Gifts==
 {{Gifts
 |LovedResponse    =
-|LovedGifts       =
+|LovedGifts       =Gold vegetables, Pancakes
 |LikedResponse    =
-|LikedGifts       =
+|LikedGifts       =Honey, Mushroom, Vegetables
 |NeutralResponse  =
 |NeutralGifts     =
-|DislikedResponse =
-|DislikedGift     =
-|unsorted ={{RF4Nutrient|Minimizer|Giantizer|NoRotB|NoRotA|FormulaC|FormulaB|FormulaA|Greenifier+|Greenifier|WettablePowder}}{{RF4Dairy|MilkS|MilkM|MilkL|EggS|EggM|EggL|Mayonnaise|Cheese|Yogurt|Honey}}
-}}Favorite Gifts: Gold vegetables, Pancakes
+|DislikedResponse ="What are you doing!"
+|DislikedGift     =Monster drops from dragons, Skill seals, Wind Dragon Fang, Also trash items
+|unsorted =
+}}
 
-Likes: Honey, Mushroom, Vegetables
-
-Dislikes: Monster drops from dragons, Skill seals, Wind Dragon Fang, Also trash items, She will Say "What are you doing!" and this is with her voice.
 ==Battle==
 {{RF4Stats
 |Lv      =75
@@ -79,22 +76,8 @@ Dislikes: Monster drops from dragons, Skill seals, Wind Dragon Fang, Also trash 
 |default =-
 }}
 
-===Enemy===
-{{RF4NMonsters
-|title     =<!--NA-->
-|image     =[[File:WVW69ir0b8AzUoPE5c.jpg]]
-|exp       =
-|bonus     =
-|location  =Sharance Maze
-|drop      =Wind Dragon Tooth, Dragon Fang, Dragon Scale, Recipe Bread+
-|level     = 75|hp=98000|atk= 3460|def = 2413
-|matk      = 3035|mdef      = 2385|str       = 3300|vit       = 2800|int       = 3015
-|weak      =
-|resist    =
-|attribute =
-|grant     =
-|note      =
-}}
+=== Enemy ===
+{{RF4Monsters|image = [[File:Ventuswill.png]]|location = Sharance Maze|drop = Wind Dragon Tooth, Dragon Fang, Dragon Scale, Recipe Bread+|level = 75|hp = 98000|atk = 3460|def = 2413|matk = 3035|mdef = 2385|str = 3300|vit = 2800|int = 3015}}
 
 ==Schedule==
 Non-human characters don't have Schedule.
@@ -107,7 +90,6 @@ VentuswillNormal.jpg
 VentuswillHappyClosed.jpg
 VentuswillSuprised.jpg
 File:Seriza1.png
-File:Seriza.png
 File:Seriza_Talking.jpg
 Venti1.png
 Venti2.png
@@ -118,15 +100,12 @@ Seriza in the Manga.png|Ventuswill(Venti)in the manga.
 Venti human.jpg|This is at the event "Mood Reversal Medecine" She show her human form with the effects of the medicine
 IMG 0556.jpg
 Venti.png
+WVW69ir0b8AzUoPE5c.jpg
 </gallery>
 ===Sprites===
 ==Trivia==
-*Ventuswill's voice actress is Wendee Lee. She shares her voice actress with [[Lin Fa]] and [[Selphy]] from ''[[Rune Factory: Frontier]]''.
 *Ondorus can mention Ventuswill in ''[[Rune Factory 3: A Fantasy Harvest Moon|Rune Factory 3]]''. In that conversation, he said that Ventuswill is one of the grand dragons and the guardian dragon of Norad.
 *She is also known as '''Selzauide''', and she has '''Seriza''' as her human name.
-*She is the only female Elder Dragon.
-*Amongst the Elder Dragons, she is the only one who died in her respective Rune Factory game.
 *It is apparent that the producers of the Rune Factory series first thought of Ventuswill in the first game. (You can see a book talk vaguely about her in the Kardia library.)
-
 {{RF4CharaNav}}
 [[Category:Characters (RF4)]]
