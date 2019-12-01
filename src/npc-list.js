@@ -13,14 +13,14 @@ class NpcEntry {
         const npc = this._npc;
         return m('li', { class: 'npc-entry' + (this._open ? ' open' : '') }, [
             m('div', { class: 'name' + (npc.show ? '' : ' disabled') }, [
+                m('span', {
+                    onclick: () => this._open = !this._open
+                }, npc.name),
                 m(Checkbox, {
                     checked: npc.gifted,
                     disabled: !npc.show,
                     onchange: v => npc.gifted = v
                 }),
-                m('span', {
-                    onclick: () => this._open = !this._open
-                }, npc.name),
                 m('a', {
                     class: 'edit',
                     href: '#/npc/' + npc.name
@@ -34,26 +34,32 @@ class NpcEntry {
 
 class NpcList {
     constructor() {
-        this._types = ['All'].concat(Npc.types);
-        this._type = this._types[0];
-        this._gifts = ['All'].concat(Npc.gifts);
-        this._gift = this._gifts[0];
-        this._states = ['All', 'Enabled', 'Gifted', 'Need Gift'];
-        this._state = this._states[0];
+        this._types = Npc.types;
+        if (!this._types.value) {
+            this._types.value = this._types[0];
+        }
+        this._gifts = Npc.gifts;
+        if (!this._gifts.value) {
+            this._gifts.value = this._gifts[0];
+        }
+        this._states = Npc.states;
+        if (!this._states.value) {
+            this._states.value = this._states[0];
+        }
     }
 
     _include(npc) {
-        if ('All' !== this._state && !npc.show) {
+        if ('All' !== this._states.value && !npc.show) {
             return false;
         }
-        if ('Gifted' === this._state && !npc.gifted) {
+        if ('Gifted' === this._states.value && !npc.gifted) {
             return false;
         }
-        if ('Need Gift' === this._state && npc.gifted) {
+        if ('Need Gift' === this._states.value && npc.gifted) {
             return false;
         }
-        return ('All' === this._type || npc.type === this._type)
-            && ('All' === this._gift || npc.gifts.get(this._gift));
+        return ('All' === this._types.value || npc.type === this._types.value)
+            && ('All' === this._gifts.value || npc.gifts.get(this._gifts.value));
     }
 
     _ungiftAll() {
@@ -66,18 +72,18 @@ class NpcList {
         return m('div', { id: 'npc-list' }, [
             m('label', 'Type:'),
             m('select', {
-                value: this._type,
-                onchange: e => this._type = e.srcElement.value
+                value: this._types.value,
+                onchange: e => this._types.value = e.srcElement.value
             }, this._types.map(x => m('option', { key: x, value: x }, x))),
             m('label', 'Gift:'),
             m('select', {
-                value: this._gift,
-                onchange: e => this._gift = e.srcElement.value
+                value: this._gifts.value,
+                onchange: e => this._gifts.value = e.srcElement.value
             }, this._gifts.map(x => m('option', { key: x, value: x }, x))),
             m('label', 'State:'),
             m('select', {
-                value: this._state,
-                onchange: e => this._state = e.srcElement.value
+                value: this._states.value,
+                onchange: e => this._states.value = e.srcElement.value
             }, this._states.map(x => m('option', { key: x, value: x }, x))),
             m('ul', Npc.filter(x => this._include(x))
                 .map(x => m(NpcEntry, { key: x.name, npc: x }))),

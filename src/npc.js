@@ -5,6 +5,7 @@ const state = loadState();
 const npcs = loadNpcs();
 npcs.types = getTypes(npcs);
 npcs.gifts = getGifts(npcs);
+npcs.states = ['All', 'Enabled', 'Gifted', 'Need Gift'];
 
 function compareName(a, b) {
     if (a.name < b.name) {
@@ -96,14 +97,14 @@ function getTypes(npcs) {
     const types = uniqueArray(v => v);
     npcs.forEach(x => types.add(x.type));
     types.sort();
-    return types;
+    return ['All'].concat(types);
 }
 
 function getGifts(npcs) {
     const gifts = uniqueArray(v => v);
     npcs.forEach(x => x.gifts.forEach(x => gifts.add(x.name)));
     gifts.sort();
-    return gifts;
+    return ['All'].concat(gifts);
 }
 
 export default npcs;
